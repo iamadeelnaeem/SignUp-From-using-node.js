@@ -1,0 +1,64 @@
+.booked-user {
+    background-color: yellow;
+    font-style: italic;
+  }
+
+table {
+    width: 100%;
+    max-width: 600px; 
+    border-collapse: collapse;
+    font-family: Arial;
+    margin-left: 20px;
+  }
+  
+  th {
+    background-color: #333; 
+    color: #fff; 
+    padding: 10px; 
+    text-align: center; 
+  }
+  
+  
+  tr {
+    border-bottom: 1px solid #ccc; 
+  }
+  
+  
+  td {
+    padding: 10px; 
+    text-align: center; 
+  }
+    
+  td a {
+    text-decoration: none; 
+    color: #0078d4;
+    font-weight: bold;
+  }
+
+  label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #6d6161;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 20px;
+  }
+  
+  button[type="submit"] {
+    background-color: #0078d4;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 20px;
+  }

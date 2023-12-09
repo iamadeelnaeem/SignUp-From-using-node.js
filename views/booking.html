@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Booking Form</title>
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+  <h1>Booking Form</h1>
+  <form action="/booking" method="post" id="booking-form">
+    <label for="userid">Userid:</label>
+    <input type="text" id="userid" name="userid" required>
+    <br>
+    <label for="room">Room Number:</label>
+    <input type="text" id="room" name="room" readonly>
+    <br>
+    <label for="time">Timeslot:</label>
+    <input type="text" id="time" name="time" readonly>
+    <br>
+    <button type="submit">BOOK</button>
+  </form>
+
+  <script>
+    // JavaScript code to extract and set room and time from URL
+    document.addEventListener("DOMContentLoaded", () => {
+      const pathSegments = window.location.pathname.split('/');
+      const room = pathSegments[2];
+      const time = pathSegments[3]; 
+
+      // Set room and time in the form fields
+      document.getElementById("room").value = room;
+      document.getElementById("time").value = time;
+
+      // Set the action URL of the form
+      const form = document.getElementById("booking-form");
+      form.action = "/booking";
+  
+    });
+  </script>
+</body>
+</html>
